@@ -64,6 +64,10 @@ router.patch("/:sceneId", verify, async (req, res) => {
       {
         $set: {
           title: req.body.title,
+          description: req.body.description,
+          snapshots: req.body.snapshots,
+          shared: req.body.shared,
+          date: req.body.date,
         },
       }
     );

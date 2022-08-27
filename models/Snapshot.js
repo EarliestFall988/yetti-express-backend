@@ -2,7 +2,22 @@ const mongoose = require("mongoose");
 const EntitySchema = require("../models/Entity").schema;
 
 const SnapshotSchema = mongoose.Schema({
-  id: String,
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    default: "",
+  },
+  creator: {
+    type: String,
+    required: true,
+  },
+  dateCreated: {
+    type: Date,
+    required: true,
+  },
   entities: {
     type: [EntitySchema],
   },
