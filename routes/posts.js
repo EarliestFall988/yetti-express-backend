@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const Scene = require("../models/Scene");
-const verify = require("./verifyToken");
+// const Scene = require("../models/Scene");
+// const verify = require("./verifyToken");
 
 // //GET ALL SCENES
 // router.get("/", verify, async (req, res) => {
